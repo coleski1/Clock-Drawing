@@ -12,6 +12,7 @@
 		FE267B012032720700C1FE7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE267AFF2032720700C1FE7B /* Main.storyboard */; };
 		FE267B032032720700C1FE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE267B022032720700C1FE7B /* Assets.xcassets */; };
 		FE267B062032720700C1FE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE267B042032720700C1FE7B /* LaunchScreen.storyboard */; };
+		FE267B0F2032803100C1FE7B /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE267B0E2032803100C1FE7B /* ClockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FE267B022032720700C1FE7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE267B052032720700C1FE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE267B072032720700C1FE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE267B0E2032803100C1FE7B /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		FE267AFA2032720700C1FE7B /* Clock Drawing */ = {
 			isa = PBXGroup;
 			children = (
-				FE267AFB2032720700C1FE7B /* AppDelegate.swift */,
+				FE267B0D2032721900C1FE7B /* Supporting Files */,
 				FE267AFD2032720700C1FE7B /* ViewController.swift */,
 				FE267AFF2032720700C1FE7B /* Main.storyboard */,
-				FE267B022032720700C1FE7B /* Assets.xcassets */,
-				FE267B042032720700C1FE7B /* LaunchScreen.storyboard */,
+				FE267B0E2032803100C1FE7B /* ClockView.swift */,
 				FE267B072032720700C1FE7B /* Info.plist */,
 			);
 			path = "Clock Drawing";
+			sourceTree = "<group>";
+		};
+		FE267B0D2032721900C1FE7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE267AFB2032720700C1FE7B /* AppDelegate.swift */,
+				FE267B022032720700C1FE7B /* Assets.xcassets */,
+				FE267B042032720700C1FE7B /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE267AFE2032720700C1FE7B /* ViewController.swift in Sources */,
+				FE267B0F2032803100C1FE7B /* ClockView.swift in Sources */,
 				FE267AFC2032720700C1FE7B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
