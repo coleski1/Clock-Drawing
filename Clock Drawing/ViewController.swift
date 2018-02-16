@@ -17,19 +17,34 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateView()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        view.layoutSubviews()
+    }
+    
+   
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func updateView() {
         clockView = ClockView()
         clockContainerView = ClockContainerView(frame: CGRect(x: view.bounds.midX, y: view.bounds.midY, width: 300, height: 300))
         
         clockView.backgroundColor = UIColor.clear
         clockContainerView.backgroundColor = UIColor.clear
-    
         
-        //add subviews 
+        
+        //add subviews
         self.view.addSubview(clockContainerView)
         self.view.addSubview(clockView)
-
-
+        
+        
         //adds constraints
         clockContainerView.translatesAutoresizingMaskIntoConstraints = false
         clockContainerView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
@@ -42,16 +57,8 @@ class ViewController: UIViewController {
         clockView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
         clockView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         clockView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-
+        
         self.view.backgroundColor = UIColor.white
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-   
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
